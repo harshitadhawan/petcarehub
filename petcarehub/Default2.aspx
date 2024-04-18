@@ -220,7 +220,7 @@
             <asp:Button ID="Button4" runat="server" Text="Adopt Zone" BackColor="White" BorderStyle="None" Font-Bold="False" Font-Names="Georgia" Font-Size="Medium" />
             <asp:Button ID="Button5" runat="server" Text="Blogs" BackColor="White" BorderStyle="None" Font-Bold="False" Font-Names="Georgia" Font-Size="Medium" />
             <asp:Button ID="Button6" runat="server" Text="LOGIN" BackColor="White" BorderStyle="Dotted" Font-Bold="False" Font-Names="Papyrus" Font-Size="Large" BorderColor="#9999A0" ForeColor="#9999A0" />
-            <asp:Image ID="Image2" runat="server" CssClass="auto-style1" ImageUrl="~/istockphoto-1417882544-170667a.jpg" />
+            <asp:Image ID="Image2" runat="server" CssClass="auto-style1" ImageUrl="~/images/istockphoto-1417882544-170667a.jpg" />
             <asp:Image ID="Image3" runat="server" ImageUrl="~/images/istockphoto-141788254w4-170667a.jpg" />
             <asp:Image ID="Image4" runat="server" ImageUrl="~/images/pets-3715733_640.jpg" />
             <asp:Image ID="Image5" runat="server" ImageUrl="https://img.freepik.com/free-photo/cute-animals-group-white-background_23-2150038562.jpg" />
@@ -232,14 +232,14 @@
 
             <div class="product-container">
                 <div class="product-card">
-                    <img src="pedigree.jpeg" alt="Pedigree" style="width:100%"/>
+                    <img src="petstorepics/pedigree.jpeg" alt="Pedigree" style="width:100%"/>
                     <h2>Pedigree Dog Food</h2>
                     <p class="price">₹610</p>
                     <p>Adult Dog Food, 3kg Pack</p>
                     <p><button>Add to Cart</button></p>
                 </div>
                 <div class="product-card">
-                    <img src="bed.jpg" alt="Bed" style="width:100%"/>
+                    <img src="petstorepics/bed.jpg" alt="Bed" style="width:100%"/>
                     <h2>Deluxe Bed</h2>
                     <p class="price">₹1350</p>
                     <p>Extra Soft & Machine Washable</p>
@@ -247,21 +247,21 @@
                 </div>
 
                 <div class="product-card">
-                    <img src="cat toy.jpg" alt="Cat Toy" style="width:100%"/>
+                    <img src="petstorepics/cat toy.jpg" alt="Cat Toy" style="width:100%"/>
                     <h2>Spring Mouse Toy</h2>
                     <p class="price">₹450</p>
                     <p>Interactive Spring Mouse</p>
                     <p><button>Add to Cart</button></p>
                 </div>
                 <div class="product-card">
-                    <img src="birdfeed.jpg" alt="Bird Feeder" style="width:100%"/>
+                    <img src="petstorepics/birdfeed.jpg" alt="Bird Feeder" style="width:100%"/>
                     <h2>Bird Feeder</h2>
                     <p class="price">₹500</p>
                     <p>Seeds and Water Feeder</p>
                     <p><button>Add to Cart</button></p>
                 </div>
                 <div class="product-card">
-                    <img src="sweater.jpg" alt="Cat Sweater" style="width:100%"/>
+                    <img src="petstorepics/sweater.jpg" alt="Cat Sweater" style="width:100%"/>
                     <h2>Green Sweater</h2>
                     <p class="price">₹900</p>
                     <p>Warm and Itch-Free</p>

@@ -1,13 +1,13 @@
 ﻿Imports System.IO
 Imports System.Reflection.Emit
 
-Partial Class Grooming
+Partial Class Adoption
     Inherits System.Web.UI.Page
 
-    Private Const DELHI_G As String = "delhigroomers.csv"
-    Private Const BANGALORE_G As String = "bangloregroomers.csv"
+    Private Const MMB_A As String = "mmbadopt.csv"
+    Private Const KOL_A As String = "koladopt.csv"
 
-    Protected Sub ImageButton_Click(sender As Object, e As ImageClickEventArgs) Handles ImageButton1.Click, ImageButton2.Click, ImageButton3.Click, ImageButton4.Click
+    Protected Sub ImageButton_Click(sender As Object, e As ImageClickEventArgs) Handles ImageButton1.Click, ImageButton2.Click, ImageButton3.Click, ImageButton4.Click, ImageButton5.Click, ImageButton6.Click
         ' Hide controls
         Dim imageButtons() As ImageButton = {ImageButton1, ImageButton2, ImageButton3, ImageButton4, ImageButton5, ImageButton6}
         For Each button As ImageButton In imageButtons
@@ -19,13 +19,13 @@ Partial Class Grooming
         ' Determine location
         Dim location As String = ""
         Select Case CType(sender, ImageButton).ID
-            Case "ImageButton1"
-                location = "Delhi"
-            Case "ImageButton2"
-                location = "Banglore"
+            Case "ImageButton5"
+                location = "Mumbai"
+            Case "ImageButton6"
+                location = "Kolkata"
         End Select
 
-        Label2.Text = "Pet Groomers in " & location & "🐾"
+        Label2.Text = "Adoption Centres in " & location & "🐾"
 
         ' Show label and panel
         Label2.Visible = True
@@ -39,10 +39,10 @@ Partial Class Grooming
         ' Load data from CSV
         Dim csvPath As String = ""
         Select Case CType(sender, ImageButton).ID
-            Case "ImageButton1"
-                csvPath = DELHI_G
-            Case "ImageButton2"
-                csvPath = BANGALORE_G
+            Case "ImageButton5"
+                csvPath = MMB_A
+            Case "ImageButton6"
+                csvPath = KOL_A
         End Select
 
         LoadDataFromCSV(csvPath)

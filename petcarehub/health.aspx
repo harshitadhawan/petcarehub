@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="grooming.aspx.vb" Inherits="Grooming" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="health.aspx.vb" Inherits="Health" %>
 
 <!DOCTYPE html>
 
@@ -95,8 +95,8 @@
         <div class="auto-style1">
             <asp:Panel ID="Panel1" runat="server">
                 <asp:Image ID="Image1" runat="server" ImageUrl="~/images/pchhh.PNG" style="text-align: justify; height: 142px; width: 557px;" />
-                <asp:Label ID="Label1" runat="server" Text="Grooming Zone 🐾" Font-Bold="True" Font-Italic="False" Font-Names="Harrington" Font-Overline="False" Font-Size="XX-Large" ForeColor="#F7630C"></asp:Label>
-                <asp:Label ID="Label2" runat="server" Text="Pet Groomers " Font-Bold="True" Font-Italic="False" Font-Names="Harrington" Font-Overline="False" Font-Size="XX-Large" ForeColor="#F7630C" Visible="false"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="Health Care 🐾" Font-Bold="True" Font-Italic="False" Font-Names="Harrington" Font-Overline="False" Font-Size="XX-Large" ForeColor="#F7630C"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="Vets in" Font-Bold="True" Font-Italic="False" Font-Names="Harrington" Font-Overline="False" Font-Size="XX-Large" ForeColor="#F7630C" Visible="false"></asp:Label>
             </asp:Panel>
 
             <asp:Panel ID="Panel2" runat="server" Height="404px" CssClass="auto-style3">

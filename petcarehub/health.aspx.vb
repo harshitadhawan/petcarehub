@@ -1,11 +1,11 @@
 ﻿Imports System.IO
 Imports System.Reflection.Emit
 
-Partial Class Grooming
+Partial Class Health
     Inherits System.Web.UI.Page
 
-    Private Const DELHI_G As String = "delhigroomers.csv"
-    Private Const BANGALORE_G As String = "bangloregroomers.csv"
+    Private Const HYD_V As String = "hydvets.csv"
+    Private Const LKO_V As String = "lkovets.csv"
 
     Protected Sub ImageButton_Click(sender As Object, e As ImageClickEventArgs) Handles ImageButton1.Click, ImageButton2.Click, ImageButton3.Click, ImageButton4.Click
         ' Hide controls
@@ -19,13 +19,13 @@ Partial Class Grooming
         ' Determine location
         Dim location As String = ""
         Select Case CType(sender, ImageButton).ID
-            Case "ImageButton1"
-                location = "Delhi"
-            Case "ImageButton2"
-                location = "Banglore"
+            Case "ImageButton3"
+                location = "Hyderabad"
+            Case "ImageButton4"
+                location = "Lucknow"
         End Select
 
-        Label2.Text = "Pet Groomers in " & location & "🐾"
+        Label2.Text = "Vets in " & location & "🐾"
 
         ' Show label and panel
         Label2.Visible = True
@@ -39,10 +39,10 @@ Partial Class Grooming
         ' Load data from CSV
         Dim csvPath As String = ""
         Select Case CType(sender, ImageButton).ID
-            Case "ImageButton1"
-                csvPath = DELHI_G
-            Case "ImageButton2"
-                csvPath = BANGALORE_G
+            Case "ImageButton3"
+                csvPath = HYD_V
+            Case "ImageButton4"
+                csvPath = LKO_V
         End Select
 
         LoadDataFromCSV(csvPath)
