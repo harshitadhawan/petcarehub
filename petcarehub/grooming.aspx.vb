@@ -8,7 +8,6 @@ Partial Class Grooming
     Private Const BANGALORE_G As String = "bangloregroomers.csv"
 
     Protected Sub ImageButton_Click(sender As Object, e As ImageClickEventArgs) Handles ImageButton1.Click, ImageButton2.Click, ImageButton3.Click, ImageButton4.Click
-        ' Hide controls
         Dim imageButtons() As ImageButton = {ImageButton1, ImageButton2, ImageButton3, ImageButton4, ImageButton5, ImageButton6}
         For Each button As ImageButton In imageButtons
             button.Visible = False
@@ -16,7 +15,6 @@ Partial Class Grooming
         Image1.Visible = False
         Label1.Visible = False
 
-        ' Determine location
         Dim location As String = ""
         Select Case CType(sender, ImageButton).ID
             Case "ImageButton1"
@@ -27,16 +25,12 @@ Partial Class Grooming
 
         Label2.Text = "Pet Groomers in " & location & "🐾"
 
-        ' Show label and panel
         Label2.Visible = True
         Panel2.Style.Add("top", "80px")
-        Me.Page.Header.Style.Add("background-color", "#64797A")
 
-        ' Register client script
-        Dim script As String = "<script type='text/javascript'>document.body.style.backgroundColor = '#FFFFFF';</script>"
-        ClientScript.RegisterStartupScript(Me.GetType(), "ChangeBackgroundColor", script)
+        Dim script As String = "document.body.style.backgroundImage = 'none';"
+        ClientScript.RegisterStartupScript(Me.GetType(), "RemoveBackgroundImage", script, True)
 
-        ' Load data from CSV
         Dim csvPath As String = ""
         Select Case CType(sender, ImageButton).ID
             Case "ImageButton1"

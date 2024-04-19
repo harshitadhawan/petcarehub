@@ -10,22 +10,23 @@
             height: 537px;
         }
         #Panel1 {
-            position: relative;
+            top: 0px;
         }
         #Panel2 {
-            position: relative;
-            top:300px
+            top: 50px;
         }
         #Image1 {
             position: absolute;
-            left: 50%; 
+            left: 50%;
+            top:0px;
             transform: translateX(-50%); 
         }
         #Label1 {
             position: absolute;
-            top: 170px;
-            left: 50%;
+            top: 130px;
+            left: 57%;
             transform: translateX(-50%);
+            width: 504px;
         }
         #Label2 {
             position: absolute;
@@ -87,31 +88,38 @@
             color: grey;
             font-size: 22px;
         }
+        
+        #ImageButton1 {
+            top: 20px;
+            left: 0px;
+        }
     </style>
 
 </head>
-<body style="background-color: #64797A">
+<body style="background-image: url('adoptbg5.png'); background-repeat: no-repeat; background-position: center center; background-size: cover; height: 100vh; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center;">
     <form id="form1" runat="server">
         <div class="auto-style1">
+            <asp:Image ID="Image1" runat="server" ImageUrl="pch_logo-removebg-preview.png" style="text-align: justify; height: 142px; width: 557px;" />
+
             <asp:Panel ID="Panel1" runat="server">
-                <asp:Image ID="Image1" runat="server" ImageUrl="~/images/pchhh.PNG" style="text-align: justify; height: 142px; width: 557px;" />
-                <asp:Label ID="Label1" runat="server" Text="ADOPT, DON'T SHOP 🐾" Font-Bold="True" Font-Italic="False" Font-Names="Harrington" Font-Overline="False" Font-Size="XX-Large" ForeColor="#F7630C"></asp:Label>
-                <asp:Label ID="Label2" runat="server" Text="Vets in" Font-Bold="True" Font-Italic="False" Font-Names="Harrington" Font-Overline="False" Font-Size="XX-Large" ForeColor="#F7630C" Visible="false"></asp:Label>
-            </asp:Panel>
+                <asp:Label ID="Label1" runat="server" Text="adopt, don't shop" Font-Bold="True" Font-Italic="False" Font-Names="Segoe Script" Font-Overline="False" Font-Size="XX-Large" ForeColor="#EA5455"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="Adoption Centres in " Font-Bold="True" Font-Italic="False" Font-Names="Segoe Script" Font-Overline="False" Font-Size="XX-Large" ForeColor="#EA5455" Visible="False"></asp:Label>
 
-            <asp:Panel ID="Panel2" runat="server" Height="404px" CssClass="auto-style3">
+            </asp:Panel>
+            
+            <asp:Panel ID="Panel2" runat="server">
                 <div id="productContainer" runat="server" class="product-container">
-                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/maps/delhi.jpg" CssClass="image-button" />
-                    <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="maps/bangalore.jpg" CssClass="image-button" />
-                    <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/maps/hyderabad.jpg" CssClass="image-button" />
-                    <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="~/maps/lucknow.jpg" CssClass="image-button" />
-                    <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/maps/mumbai.jpg" CssClass="image-button" />
-                    <asp:ImageButton ID="ImageButton6" runat="server" ImageUrl="~/maps/kolkata.jpg" CssClass="image-button" />
+                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="mapsfinal/delhimap.png" CssClass="image-button" style="position: absolute; top: 220px; left: 90px;" />
+                    <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="mapsfinal/bnglomap.png" CssClass="image-button" style="position: absolute; top: 220px; left: 320px;" />
+                    <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="mapsfinal/hydmap.jpg" CssClass="image-button" style="position: absolute; top: 220px; left: 36%;" />
+                    <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="mapsfinal/lkomap.png" CssClass="image-button" style="position: absolute; top: 220px; right: 36%;" />
+                    <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="mapsfinal/mmbmap.png" CssClass="image-button" style="position: absolute; top: 220px; right: 320px;" />
+                    <asp:ImageButton ID="ImageButton6" runat="server" ImageUrl="mapsfinal/kolmap.jpg" CssClass="image-button" style="position: absolute; top: 220px; right: 90px;" />
                 </div>
-
             </asp:Panel>
-
         </div>
+
+
     </form>
 </body>
 </html>
